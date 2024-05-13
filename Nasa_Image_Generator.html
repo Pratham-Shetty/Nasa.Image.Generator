@@ -3,47 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA Image Search</title>
+    <title>NASA Mars Curiosity Photos</title>
     <style>
         body {
             font-family: sans-serif;
             margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         #image-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
             margin-top: 20px;
+            width: 500px;
         }
         .image-item {
-            width: 200px;
-            margin: 10px;
+            width: 100%;
+            margin: 10px 0;
         }
         .image-item img {
             display: block;
             width: 100%;
             height: auto;
         }
-        #button-container {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
         button {
             padding: 10px 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>NASA Image Search</h1>
-    <div id="button-container">
-        <button id="btn-astronomy">Astronomy</button>
-        <button id="btn-planetary">Planetary</button>
-        <button id="btn-earth">Earth</button>
-    </div>
+    <h1>NASA Mars Curiosity Photos (Sol 1000)</h1>
+    <button id="get-image-btn">Gimme the Pic!</button>
     <div id="image-container"></div>
 
     <script src="script.js"></script>
