@@ -1,5 +1,5 @@
 const apiKey = 'aIpI1vVf5lrhCSmAh0KX5dJdh2rG0meKzKOqTSMf'; // Replace with your actual API key (not provided here for security)
-const baseUrl = 'https://api.nasa.gov/search';
+const baseUrl = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=';
 const imageContainer = document.getElementById('image-container');
 const buttons = document.querySelectorAll('button');
 
